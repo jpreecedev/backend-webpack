@@ -1,0 +1,36 @@
+{
+  "name": "backend-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "server": "babel-node ./dist/main.js",
+    "start": "npm run build && npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpreecedev/backend-webpack.git"
+  },
+  "author": "Jon Preece",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jpreecedev/backend-webpack/issues"
+  },
+  "homepage": "https://github.com/jpreecedev/backend-webpack#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/runtime": "^7.1.2",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
